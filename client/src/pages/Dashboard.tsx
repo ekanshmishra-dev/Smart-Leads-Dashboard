@@ -68,21 +68,18 @@ const Dashboard = () => {
           value={stats?.totalLeads || 0} 
           icon={Users} 
           color="primary"
-          trend={{ value: 12, isUp: true }}
         />
         <StatsCard 
           title="Qualified Leads" 
           value={stats?.qualifiedLeads || 0} 
           icon={UserCheck} 
           color="success"
-          trend={{ value: 8, isUp: true }}
         />
         <StatsCard 
           title="Lost Leads" 
           value={stats?.lostLeads || 0} 
           icon={UserMinus} 
           color="danger"
-          trend={{ value: 5, isUp: false }}
         />
       </div>
 
