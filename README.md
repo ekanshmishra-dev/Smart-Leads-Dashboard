@@ -2,8 +2,6 @@
 
 A professional, production-ready Full Stack Lead Management System built with React, Node.js, and MongoDB. This project features a modern SaaS UI, secure JWT authentication, advanced filtering, and real-time analytics.
 
-![Dashboard Preview](https://via.placeholder.com/800x450?text=Smart+Leads+Dashboard+Preview)
-
 ## ✨ Key Features
 
 - **🔐 Secure Authentication**: JWT-based login/register with role-based access (Admin/User).
