@@ -99,7 +99,7 @@ const LeadDetails = () => {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex items-center gap-6">
           <div className="w-20 h-20 rounded-3xl bg-primary/10 text-primary flex items-center justify-center text-3xl font-bold">
-            {lead.name.charAt(0)}
+            {lead.name?.charAt(0) || '?'}
           </div>
           <div>
             <h1 className="text-4xl font-bold font-display tracking-tight">{lead.name}</h1>

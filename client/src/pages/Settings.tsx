@@ -75,7 +75,7 @@ const Settings = () => {
             <div className="space-y-6">
               <div className="flex items-center gap-6 mb-8">
                 <div className="w-20 h-20 bg-gradient-to-tr from-primary to-blue-400 rounded-full flex items-center justify-center text-white text-2xl font-bold border-4 border-card shadow-lg">
-                  {user?.name.charAt(0)}
+                  {user?.name?.charAt(0) || 'U'}
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{user?.name}</h3>
