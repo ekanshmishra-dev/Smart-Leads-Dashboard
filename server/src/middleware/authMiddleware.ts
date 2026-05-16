@@ -4,6 +4,9 @@ import User from '../models/User';
 
 export interface AuthRequest extends Request {
   user?: any;
+  query: any;
+  body: any;
+  headers: any;
 }
 
 export const protect = async (req: AuthRequest, res: Response, next: NextFunction) => {
