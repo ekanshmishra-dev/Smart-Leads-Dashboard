@@ -43,7 +43,7 @@ const Dashboard = () => {
     {[1,2,3].map(i => <div key={i} className="h-40 bg-muted rounded-3xl" />)}
   </div>;
 
-  const chartData = stats?.sourceStats.map((s: any) => ({ name: s._id, value: s.count }));
+  const chartData = stats?.sourceStats?.map((s: any) => ({ name: s._id, value: s.count })) || [];
 
   return (
     <div className="space-y-8 animate-slide-up">
@@ -134,7 +134,7 @@ const Dashboard = () => {
             </Link>
           </div>
           <div className="space-y-4">
-            {stats?.recentLeads.map((lead: any) => (
+            {stats?.recentLeads?.map((lead: any) => (
               <Link 
                 key={lead._id} 
                 to={`/leads/${lead._id}`}
