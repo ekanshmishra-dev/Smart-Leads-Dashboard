@@ -199,7 +199,7 @@ const Leads = () => {
                     <td className="px-6 py-4">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold">
-                          {lead.name.charAt(0)}
+                          {lead.name?.charAt(0) || '?'}
                         </div>
                         <div>
                           <p className="font-semibold text-sm">{lead.name}</p>

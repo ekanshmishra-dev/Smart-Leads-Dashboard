@@ -163,7 +163,7 @@ const DashboardLayout = () => {
                 <p className="text-xs text-muted-foreground mt-1 uppercase tracking-wider font-bold">{user?.role}</p>
               </div>
               <div className="w-10 h-10 bg-gradient-to-tr from-primary to-blue-400 rounded-full flex items-center justify-center text-white font-bold border-2 border-card shadow-sm">
-                {user?.name.charAt(0)}
+                {user?.name?.charAt(0) || 'U'}
               </div>
             </Link>
           </div>

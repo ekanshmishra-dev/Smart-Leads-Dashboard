@@ -142,7 +142,7 @@ const Dashboard = () => {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                    {lead.name.charAt(0)}
+                    {lead.name?.charAt(0) || '?'}
                   </div>
                   <div>
                     <p className="text-sm font-semibold">{lead.name}</p>
