@@ -26,7 +26,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (storedUser) {
       try {
         const parsed = JSON.parse(storedUser);
-        if (parsed && typeof parsed === 'object') {
+        // Force logout if the user object is corrupted or from the old backend
+        if (parsed && typeof parsed === 'object' && parsed.name && parsed.email) {
           setUser(parsed);
         } else {
           localStorage.removeItem('user');
