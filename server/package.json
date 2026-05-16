@@ -21,15 +21,15 @@
     "express-validator": "^7.3.2",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.2.0",
-    "mongoose": "^9.6.2"
-  },
-  "devDependencies": {
+    "mongoose": "^9.6.2",
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/mongoose": "^5.11.96",
-    "@types/node": "^25.8.0",
+    "@types/node": "^25.8.0"
+  },
+  "devDependencies": {
     "ts-node-dev": "^2.0.0",
     "typescript": "^6.0.3"
   }
