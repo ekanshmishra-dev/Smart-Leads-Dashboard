@@ -21,7 +21,12 @@ const NotificationContext = createContext<NotificationContextType | undefined>(u
 export const NotificationProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [notifications, setNotifications] = useState<Notification[]>(() => {
     const saved = localStorage.getItem('notifications');
-    return saved ? JSON.parse(saved) : [
+    let parsed = null;
+    try {
+      parsed = saved ? JSON.parse(saved) : null;
+    } catch(e) {}
+    
+    return Array.isArray(parsed) ? parsed : [
       {
         id: '1',
         message: 'Welcome to SmartLeads! Start managing your leads today.',
